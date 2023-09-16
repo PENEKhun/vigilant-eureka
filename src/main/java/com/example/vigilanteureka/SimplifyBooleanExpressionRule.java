@@ -32,4 +32,13 @@ public class SimplifyBooleanExpressionRule {
     }
   }
 
+  public boolean notDetectedCase2(boolean trueOrFalse) {
+    // good code in this rule
+    if (trueOrFalse) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
