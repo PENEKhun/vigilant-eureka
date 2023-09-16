@@ -23,6 +23,15 @@ public class SimplifyBooleanExpressionRule {
     }
   }
 
+  public boolean detectedCase3(boolean value) {
+    // bad smell code
+    if (value == false) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   public boolean notDetectedCase1(boolean value) {
     // good code in this rule
     if (value) {
