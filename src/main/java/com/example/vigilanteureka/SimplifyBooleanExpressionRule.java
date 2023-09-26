@@ -5,6 +5,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class SimplifyBooleanExpressionRule {
 
+  public static boolean detectedCase0(boolean val) {
+    // bad smell code
+    return (val == true);
+  }
+
   public boolean detectedCase1(boolean value) {
     // bad smell code
     if (value == true) {
